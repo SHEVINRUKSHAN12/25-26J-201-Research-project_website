@@ -1,0 +1,674 @@
+        
+ 
+ 
+ 
+Page 1 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+                                                             Project ID :  
+1. Topic (12 words max)  
+ 
+ 
+ 
+2. Research group the project belongs to  
+ 
+ 
+ 
+3. Specialization of the  project belongs to  
+ 
+ 
+ 
+4. If a continuation of a previous project:  
+ 
+ 
+ 
+5. Brief description of the research problem  including references (200 – 500 words 
+max)  – references not included in word count . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Project ID    
+Year   Integrated Home Design and Planning Management System   
+ 
+ 
+ CoEAI  - Centre of Excellence for AI  
+Information Technology (IT)  
+Creating a home is one of the most significant investments for individuals and families, 
+particularly in developing countries such as Sri Lanka, where owning a house is often considered 
+a lifelong achievement. However, the process of planning and building a house is highly complex 
+and presents multiple challenges for prospective homeowners. The increasing demand for 
+housing, especially in urban areas, has led to issues such as limited space, inefficient designs, and 
+a lack of proper alignment with cultural practices and environmental needs. The core challenge 
+lies in integrating modern design techniques with traditional cultural values while ensuring that 
+the design is efficient, functional, and sustainable. This has been further exacerbated by the 
+recent ec onomic crisis, which has led to a surge in construction costs and a decline in new 
+projects [4].  
+ 
+One of the primary issues homeowners face is interior space optimization. In many cases, 
+traditional methods of space planning do not take full advantage of the available area, leading to 
+wasted space and inefficient layouts. The current approach to home d esign is often fragmented, 
+requiring homeowners to engage with multiple professionals —such as architects, engineers, and 
+contractors —and to manually coordinate each stage of the project. This siloed process increases 
+costs, causes delays, and significantly  raises the risk of miscommunication and errors [2]. 
+Without a centralized, integrated platform, it is difficult for homeowners to visualize their project 
+holistically, from initial concept to final construction plan, hindering their ability to make 
+inform ed decisions.  
+ 
+A second significant problem is the disconnection between modern design and traditional 
+knowledge, specifically principles like Vastu Shastra. These principles, which are deeply rooted in  
+Lankan culture, focus on creating Lankan system of architecture, emphasizes the importance of 
+spatial alignment to promote harmony, energy flow, and well -being. Traditional designs often 
+adhere strictly to Vastu principles, but modern homes frequently neglect these guidelines in 
+favor of s tructural efficiency or aesthetic appeal.  This creates a disconnect between the 
+functional and spiritual  aspects of the  25-26J-201  
+         
+ 
+ 
+ 
+Page 2 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ armony between a structure and its natural environment, optimizing elements such as natural 
+light, ventilation, and energy flow [6]. However, modern, generic designs often overlook these 
+crucial cultural and spiritual aspects. This creates a dilemma for ho meowners who want a 
+contemporary home that also respects their heritage. There is a need for a solution that can 
+intelligently incorporate these principles into a modern design framework, allowing for homes 
+that are both aesthetically pleasing and cultural ly resonant.  
+Finally, the construction industry in Sri Lanka faces a critical need to shift towards sustainable 
+practices. The current over -reliance on non -renewable, high -cost imported materials not only 
+drives up construction costs but also contributes to a negative environmental impact [7]. There is 
+a clear need to explore and integrate traditional, local, and sustainable building materials into 
+modern designs to reduce a project's carbon footprint and overall cost [3]. This research project 
+aims to address these mul tifaceted challenges by developing an integrated, intelligent system 
+that streamlines the home design process, respects cultural heritage, and promotes sustainable 
+construction, thereby making the dream of homeownership more accessible and 
+environmentally conscious for all Sri Lankans [8].  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ References  
+1. M. A. Ranwatta, “A study of the impact of minimalism on user psychology,” Department 
+of Architecture, University of Moratuwa, Moratuwa, Sri Lanka, 2021.  
+2. H. H. Ekanayake, et al., “Modelling design stage risks in modular integrated construction 
+projects in Sri Lanka,” ResearchGate , 2023. Available: 
+https://www.google.com/search?q=https://www.researchgate.net/publication/3728302
+67. 
+3. K. B. C. Fernando and A. Liyanage, "Exploring traditional building materials for urban 
+housing in Sri Lanka," Journal of Tropical Architecture , 2023. Available: 
+https://journals.sjp.ac.lk/index.php/icremv/article/download/6773/4805/18541.  
+4. T. Hettiarachchi and M. Dhanji, "The Challenges of Sustainable Affordable Housing 
+Construction During the Sri Lankan Economic Crisis," International Journal of Research 
+and Innovation in Social Science , vol. 8, no. 2, pp. 1868 -1875, 2024.  
+5. D. S. D. W. K. Liyanagamage, et al., "Survival Challenges Faced by the Small -scale Building 
+Contractors in Sri Lanka," Proceedings of the 12th World Construction Symposium , pp. 
+415-424, 2024.  
+6. A. G. B. G. L. Herath, et al., "A study on the integration of Vaastu Shastra principles with 
+sustainable building practices," Journal of Multi -disciplinary Research , vol. 2, no. 3, 2023.  
+7. M. K. Dissanayake, et al., "Towards a sustainable building stock in Sri Lanka," IESL-Sri 
+Lanka Engineering News , vol. 53, no. 02, pp. 4 -6, 2022.  
+8. R. A. S. Ranathunga and E. P. S. K. Ekanayake, "An investigation into challenges and 
+mitigation measures for implementing green building practices in Sri Lanka," 
+International Journal of Environmental and Sustainability Engineering , vol. 1, no. 2, pp. 
+58-69, 2023.  
+         
+ 
+ 
+ 
+Page 3 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+ 
+6. Brief description of the nature of the solution including a conceptual diagram (250 
+words max)  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The solution is an AI -powered platform designed to optimize residential home designs by 
+improving both the functionality and efficiency of space while integrating Vastu Vidya principles 
+for cultural alignment. The system begins by taking user inputs, inclu ding land dimensions and 
+specific requirements like the number of rooms and outdoor space. Once this information is 
+provided, the AI analyzes the layout and generates space optimization suggestions, ensuring 
+efficient room usage and traffic flow.  
+An additional feature allows users to align their design with Vastu Vidya, adjusting room 
+orientations, furniture placements, and overall layout to promote spiritual harmony. For users 
+working with smaller plots of land, the system offers recommendations f or land optimization, 
+ensuring the most efficient use of the available space for both the house and garden.  
+Furthermore, the system addresses exterior space optimization by maximizing the functionality 
+of gardens, rooftops, and facades. Whether for relaxation, gardening, or energy -efficient 
+designs, the system ensures these outdoor areas serve multiple purposes.  It also provides real -
+time feedback and generates a compliance score, helping users see how well their designs 
+adhere to both Vastu Vidya principles and space optimization goals. This comprehensive tool 
+ensures that homes are not only efficient and functi onal but also culturally aligned and 
+spiritually balanced.  
+ 
+        
+ 
+ 
+ 
+Page 4 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+ 
+7. Brief description of specialized domain  expertise , knowledge,  and data requirements  
+(300 words max)  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 3. Vastu Vidya:  Vastu Vidya is the traditional architectural system based on spatial 
+alignment for promoting harmony. A deep understanding of Vastu principles such as room 
+orientation, furniture placement, and environmental alignment is needed to incorporate 
+this into th e design process.  
+This knowledge will guide the AI in making design decisions that respect cultural practices 
+while ensuring functionality.  
+4. Data Requirements: The system will need several types of data:  
+• Floor plan data : Dimensions of rooms and furniture placements.  
+• User preferences : Specific requirements for room functions, furniture types, 
+and aesthetic choices.  
+• Vastu Vidya guidelines : Cultural data on room placements and furniture 
+orientations.  
+• Land dimensions : Data on land plots for land optimization.  
+ 
+ To successfully develop the AI -powered Integrated Home Design and Planning Management 
+System, specialized knowledge and expertise are required in several areas, including artificial 
+intelligence, architectural design, and cultural principles like Vastu Vid ya. 
+1. Artificial Intelligence (AI) and Machine Learning:  The system will rely heavily on AI and 
+machine learning to analyze  floor plans, optimize space usage, and provide real -time 
+feedback. Expertise in training AI models to detect inefficiencies in layout and suggest 
+real-time improvements is essential. Additionally, AI will be used to align designs with 
+Vastu Vidya principl es, requiring knowledge of rule -based AI to integrate cultural 
+guidelines into the system.  
+2. Architectural Design and Space Optimization:  Understanding space planning and 
+ergonomic design principles is crucial. The AI system must analyze room dimensions 
+and efficiently place furniture while considering factors like traffic flow, comfort, and 
+space usage. Expertise in interior design and lan d optimization will help the system 
+generate practical, efficient layouts, particularly for smaller plots.  
+ 
+ 
+         
+ 
+ 
+ 
+Page 5 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+ 
+8. Objectives and Novelty  
+Main Objective  
+The primary objective of this research is to develop an AI -powered platform that integrates Vastu Vidya -based land 
+optimization, real -time design corrections, and interior space optimization. The system will optimize land use, ensure 
+cultural alignment thr ough Vastu principles, and improve interior functionality and space efficiency. It will also optimize 
+exterior spaces such as gardens and rooftops. The platform provides a compliance score and real -time feedback to ensure 
+designs are both practically effic ient and spiritually aligned, offering a holistic  solution to modern home design challenges.  
+Member Name  
+with Registration 
+No Sub Objective  Task s Novelty  
+Rathnasinghe S.J.R 
+IT22908124  Develop an AI -
+powered platform 
+that optimizes 
+interior space in 
+residential homes, 
+ensuring maximum 
+efficiency and 
+comfort. The 
+system will 
+generate optimized 
+furniture 
+placements and 
+layouts for all 
+rooms, improving 
+overall space 
+utilization while 
+also in tegrating Interior Space Optimization : 
+The system will analyze room 
+dimensions and furniture types to 
+provide suggestions for optimal 
+placement, ensuring that spaces are not 
+overcrowded and that traffic flow, 
+ergonomics, and user comfort are 
+maximized. In addition, the system will 
+integrate Vas tu Vidya principles, guiding 
+furniture placement to ensure 
+alignment with traditional cultural 
+guidelines. For example, it will suggest 
+placing the dining table facing east, a 
+practice recommended in Vastu Vidya, 
+alongside optimizing the room layout 
+for be tter space use.  Real -time Design Adjustments & 
+Feedback : 
+The platform will offer instant 
+corrections based on user input, 
+adjusting furniture placement and 
+room layout for better space 
+utilization. It will also provide real -
+time feedback, helping users 
+visualize the changes and 
+understand the impact on space 
+efficiency. Additionally, the system 
+will incorporate Vastu Vidya 
+principles in real -time, offering users 
+the option to align their home 
+designs with both functional and 
+cultural requirements.          
+ 
+ 
+ 
+Page 6 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+Vastu Vidya 
+principles for room 
+orientation and 
+furniture 
+placement.  
+Dinetha K A V 
+IT22924278  Develop an AI -
+powered system 
+that ensures 
+residential floor 
+plans are in 
+harmony with 
+Vastu Vidya 
+principles, 
+seamlessly 
+integrating cultural, 
+spiritual, and 
+environmental 
+standards into the 
+design process. The 
+system will also 
+generate 2D floor 
+plans base d on the 
+specific 
+characteristics of 
+the residential 
+design.  
+ Vastu Vidya & Design  Correction  
+•  The platform will automatically 
+analyze floor plans for Vastu Vidya 
+compliance, making real -time 
+corrections to elements such as room 
+orientation, furniture placement, and 
+overall layout. It will provide a 
+compliance score, offering insights into 
+how well the design adheres to 
+traditional principles of Vastu Vidya.  Real -time Design Adjustments & 
+Automated Compliance Scoring  
+The system offers real -time design 
+adjustments, providing instant 
+feedback and corrections, unlike the 
+traditional time -consuming process 
+of manual reviews. It also 
+automatically generates a 
+compliance score, making it faster 
+and more efficient to ensure V astu 
+alignment.          
+ 
+ 
+ 
+Page 7 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+Sunkalpani S M D 
+R  IT22914996  Develop an AI -
+based system for 
+land optimization 
+and plan 
+generation that 
+ensures efficient 
+use of available 
+land while 
+maintaining 
+cultural alignment 
+with Vastu Vidya 
+principles. The 
+system will 
+optimize plot 
+layouts and suggest  
+where the house, 
+garden, and other 
+features should be 
+placed.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Land Optimization & Plan Generation : 
+The system will analyze the dimensions 
+of the land and user requirements to 
+suggest the most efficient layout. It will 
+also align the plan with Vastu Vidya, 
+ensuring the house placement adheres 
+to cultural principles like room 
+orientation and the placement  of key 
+areas such as the kitchen, living room, 
+and bedrooms.  Compliance with Vastu Vidya & 
+Real -time Feedback : 
+By integrating Vastu Vidya, the 
+system will ensure the layout is both 
+efficient and culturally aligned. It will 
+provide real -time design 
+adjustments, making the layout 
+process faster and more efficient, 
+while offering insights through 
+compliance scores.          
+ 
+ 
+ 
+Page 8 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+Hansika J A J  
+IT22346018  Design an AI -
+powered platform 
+that focuses on 
+optimizing the use 
+of exterior spaces 
+such as gardens, 
+rooftops, and 
+facades for 
+functional purposes 
+like gardening, 
+relaxation, and 
+energy efficiency. 
+The system will 
+ensure these areas 
+are optimized for 
+both aesthetic and 
+practical use.  Exterior Space Optimization : 
+The platform will analyze the 
+dimensions of outdoor spaces and 
+suggest the best use for gardens, 
+rooftops, and facades, taking into 
+account the available space and user 
+preferences. It will provide options for 
+sustainable and energy -efficient designs 
+like natural cooling and green spaces.  Energy -efficient Designs & Real -time 
+Adjustments : 
+The system will suggest optimized 
+designs for exterior areas to improve 
+energy efficiency and overall 
+usability. It will also provide real -
+time feedback on design choices, 
+ensuring that the outdoor spaces are 
+as functional and sustainable as 
+possible.  
+ 
+         
+ 
+ 
+ 
+Page 9 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+9. Individual component description of how it is complied with the specialization.  
+Member Name  with 
+Registration No  Description  
+Rathnasinghe S.J.R 
+IT22908124  Interior Space Optimization : The AI -powered system for interior space 
+optimization leverages machine learning algorithms to analyze room 
+dimensions and furniture types to suggest the best placement. This ensures 
+the maximum efficiency of the living spaces by improving traffic flow, 
+ergonomics, and overall comfort. The system also integrates Vastu Vidya 
+principles to guide furniture placement, such as the dining table orientation, 
+ensuring the design is both functional and spiritually aligned with traditiona l 
+cultural practices. This integration of space optimization and Vastu Vidya 
+principles provides a holistic solution for optimizing interiors while respecting 
+cultural heritage.  
+Dinetha K A V 
+IT22924278  Vastu  Vidya & Design Correction:  This module ensures residential floor plans 
+align with Vastu Vidya principles, integrating cultural, spiritual, and 
+environmental standards. It automatically analyzes designs for compliance, 
+making real -time adjustments to room orientation, furniture placement, and 
+layout. The system provides a compliance score, offering quick, automated 
+feedback and corrections, streamlining the traditional, time -consuming review 
+process for faster Vastu alignment.  
+Sunkalpani S M D R  
+IT22914996  Land Optimization & Plan Generation : The AI system for land optimization 
+and plan generation analyzes the dimensions of the land and the user’s 
+requirements to recommend the most efficient layout. The system optimizes 
+the placement of the house, garden, and other features within the available  
+plot. By integrating Vastu Vidya, the layout is also adjusted to respect 
+traditional principles, such as room orientation and the proper placement of 
+key areas like the kitchen and living spaces. This ensures that the layout is both 
+spatially efficient and culturally aligned, creating a balance between modern 
+functionality and traditional values.  
+Hansika J A J  
+IT22346018  Exterior Space Optimization:  The AI -powered system for exterior space 
+optimization focuses on maximizing the use of  outdoor areas, such as gardens, 
+rooftops, and facades, for both aesthetic appeal and functionality. It analyzes 
+available space and recommends layouts that improve comfort, energy 
+efficiency, and sustainability. The system also ensures that exterior space s are 
+designed for recreation, gardening, and natural cooling, aligning with cultural 
+expectations and promoting green living. By leveraging AI, this component 
+maximizes outdoor space potential, enhancing the living environment while 
+addressing environmental concerns.  
+ 
+         
+ 
+ 
+ 
+Page 10 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+ 
+10. Supervisor details  
+ Title  First Name  Last Name  Signature  
+Supervisor      
+ 
+Co-Supervisor      
+ 
+External Supervisor      
+Summary of external supervisor’s (if any) experience and expertise  
+ 
+ 
+         
+ 
+ 
+ 
+Page 11 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+This part is to  be filled by the Topic Screening Staff  members.  
+ 
+a) Does the chosen research topic possess a comprehensive scope suitable for a 
+final -year project?  
+Yes  No  
+ 
+b) Does the proposed topic exhibit novelty?  
+Yes  No  
+ 
+c) Do you believe they have the capability to successfully execute the proposed 
+project?  
+Yes  No  
+ 
+d) Do the proposed sub -objectives reflect  the students' areas of specialization?  
+Yes  No  
+ 
+e) Supervisor's Evaluation and Recommendation for the Research topic:  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          
+ 
+ 
+ 
+Page 12 of 12 
+ 
+IT4010 Research Project  – 2025 July 
+Topic Assessment Form  
+Acceptable:  Mark/Select as necessary  
+Topic Assessment Accepted   
+Topic Assessment Accep ted with minor changes *  
+Topic Assessment to be Resubmitted with major changes*   
+Topic Assessment Rejected. Topic must be changed   
+ 
+* Detailed comments given below  
+Comments  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+Staff M ember’s Name  Signature  
+ 
+  
+ 
+  
+ 
+*Important : 
+1. According to the comments given by the evaluator , make  the necessary 
+modifications and get the approval by the Evaluator . 
+2. If the project topic is rejected, identify a new topic, and request the RP 
+Team for a new topic assessment.   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
