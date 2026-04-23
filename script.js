@@ -19,16 +19,27 @@ const objectives = [
 ];
 
 const technologies = [
-  "Python", "React", "YOLOv8", "TensorFlow", "Keras", "PyTorch", "Genetic Algorithms", "OpenCV", "Shapely"
+  { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "YOLOv8", icon: "https://raw.githubusercontent.com/ultralytics/assets/main/logo/Logo_Ultralytics_Square.svg" },
+  { name: "Tensorflow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+  { name: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+  { name: "OpenCV", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
+  { name: "Keras", icon: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" },
+  { name: "CNN", icon: "https://www.svgrepo.com/show/373884/node-js.svg" }, /* Placeholder for CNN, using a neural network like icon */
+  { name: "Genetic Algorithms", icon: "https://www.svgrepo.com/show/353724/dna.svg" },
+  { name: "Shapely", icon: "https://www.svgrepo.com/show/440003/geometry.svg" }
 ];
 
 const milestones = [
-  { date: "March 2026", title: "Project Proposal", description: "A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.", marks: "Marks Allocated: 6" },
-  { date: "June 2026", title: "Progress Presentation I", description: "Progress Presentation I reviews the 50% completion status of the project. This reveals any gaps or inconsistencies in the design/requirements.", marks: "Marks Allocated: 6" },
-  { date: "July 2026", title: "Research Paper", description: "Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge.", marks: "Marks Allocated: 10" },
-  { date: "September 2026", title: "Progress Presentation II", description: "Reviews the 90% completion status demonstration of the project. Along with a Poster presentation which describes the project as a whole.", marks: "Marks Allocated: 18" },
-  { date: "October 2026", title: "Website Assessment", description: "The Website helps to promote our research project and reveals all details related to the project.", marks: "Marks Allocated: 2" },
-  { date: "November 2026", title: "Final Report & Viva", description: "Final Report evaluates the completed project done throughout the year. Viva is held individually to assess each member's contribution.", marks: "Marks Allocated: 39" },
+  { date: "Date TBD", title: "Proposal Presentation & Report", description: "Initial proposal presentation and report submission covering the project idea, scope, and planned approach.", marks: "Marks Allocated: 12%" },
+  { date: "Date TBD", title: "Progress Presentation I", description: "First progress review covering the initial implementation stage and overall project development status.", marks: "Marks Allocated: 15%" },
+  { date: "Date TBD", title: "Progress Presentation II", description: "Second progress review focused on advanced implementation progress, refinements, and readiness for completion.", marks: "Marks Allocated: 18%" },
+  { date: "Date TBD", title: "Final Presentation and VIVA", description: "Final presentation and viva assessment demonstrating the completed solution and evaluating each member's understanding.", marks: "Marks Allocated: 20%" },
+  { date: "Date TBD", title: "Final Report", description: "Comprehensive final project report documenting the full research, implementation, evaluation, and outcomes.", marks: "Marks Allocated: 19%" },
+  { date: "Date TBD", title: "Research Paper (published)", description: "Published research paper presenting the project's contribution, findings, and academic value.", marks: "Marks Allocated: 10%" },
+  { date: "Date TBD", title: "Website", description: "Project website submission showcasing the research, implementation details, milestones, and downloadable resources.", marks: "Marks Allocated: 2%" },
+  { date: "Date TBD", title: "Research Logbook, Status Document 1 & 2", description: "Continuous assessment based on research logbook maintenance and the submission of status documents 1 and 2.", marks: "Marks Allocated: 4%" },
 ];
 
 const documents = [
@@ -55,7 +66,8 @@ const team = [
 
 const supervisors = [
   { name: "Prof. Samantha Rajapaksha", role: "Supervisor", summary: "Sri Lanka Institute of Information Technology" },
-  { name: "Ms. Adya Dissanayake", role: "Co-Supervisor", summary: "Sri Lanka Institute of Information Technology" }
+  { name: "Ms. Adya Dissanayake", role: "Co-Supervisor", summary: "Sri Lanka Institute of Information Technology" },
+  { name: "Mr. Mangala Muhandiram", role: "External Supervisor", summary: "Architecture & Vastu Consultant" }
 ];
 
 const contacts = [
@@ -78,7 +90,14 @@ function renderObjectives() {
 function renderTechnologies() {
   const el = document.getElementById('tech-list');
   if (!el) return;
-  el.innerHTML = technologies.map(t => `<span class="tech-chip">${t}</span>`).join('');
+  el.innerHTML = technologies.map(t => `
+    <div class="tech-item">
+      <div class="tech-icon-circle">
+        <img src="${t.icon}" alt="${t.name}">
+      </div>
+      <p class="tech-name">${t.name}</p>
+    </div>
+  `).join('');
 }
 
 function renderMilestones() {

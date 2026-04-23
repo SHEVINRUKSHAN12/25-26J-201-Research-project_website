@@ -34,7 +34,12 @@ When `href` is empty, the website shows `Pending upload`. When `href` has a path
 
 ## How to publish on GitHub Pages
 
-1. Create a new GitHub repository
+1. Use the GitHub repository:
+
+```text
+https://github.com/SHEVINRUKSHAN12/25-26J-201-Research-project_website.git
+```
+
 2. Upload the contents of this `research-website` folder to that repository
 3. In GitHub, go to `Settings` -> `Pages`
 4. Under `Build and deployment`, choose:
@@ -43,10 +48,10 @@ When `href` is empty, the website shows `Pending upload`. When `href` has a path
    - `Folder`: `/ (root)`
 5. Save the settings
 6. Wait a few minutes for deployment
-7. Your published link will look like:
+7. Your published link will be:
 
 ```text
-https://YOUR-USERNAME.github.io/YOUR-REPOSITORY-NAME/
+https://shevinrukshan12.github.io/25-26J-201-Research-project_website/
 ```
 
 ## Local preview
