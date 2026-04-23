@@ -114,16 +114,16 @@ const presentations = [
 ];
 
 const team = [
-  { name: "Rathnasinghe S J R", id: "IT22908124", role: "Group Leader", summary: "Interior Space Optimization", photo: "assets/images/Rathansinghe.jpg" },
-  { name: "Dinetha K A V", id: "IT22924278", role: "Group Member", summary: "Vastu Vidya & Design Correction", photo: "assets/images/Dinetha.png" },
-  { name: "Sunkalpani S M D R", id: "IT22914996", role: "Group Member", summary: "Land Optimization & Plan Generation", photo: "assets/images/Sunkalpani.png" },
-  { name: "Hansika J A J", id: "IT22346018", role: "Group Member", summary: "Exterior Space Optimization", photo: "assets/images/Hansika.png" },
+  { name: "Rathnasinghe S J R", id: "IT22908124", role: "Group Leader", summary: "Interior Space Optimization", photo: "assets/images/Rathnasinghe.png", linkedin: "#", email: "mailto:example@example.com" },
+  { name: "Dinetha K A V", id: "IT22924278", role: "Group Member", summary: "Vastu Vidya & Design Correction", photo: "assets/images/Dinetha.png", linkedin: "#", email: "mailto:example@example.com" },
+  { name: "Sunkalpani S M D R", id: "IT22914996", role: "Group Member", summary: "Land Optimization & Plan Generation", photo: "assets/images/Sunkalpani.png", linkedin: "#", email: "mailto:example@example.com" },
+  { name: "Hansika J A J", id: "IT22346018", role: "Group Member", summary: "Exterior Space Optimization", photo: "assets/images/Hansika.png", linkedin: "#", email: "mailto:example@example.com" },
 ];
 
 const supervisors = [
-  { name: "Prof. Samantha Rajapaksha", role: "Supervisor", summary: "Sri Lanka Institute of Information Technology", photo: "assets/images/Prof.Samantha.png" },
-  { name: "Ms. Adya Dissanayake", role: "Co-Supervisor", summary: "Sri Lanka Institute of Information Technology", photo: "assets/images/Ms.Adya.png" },
-  { name: "Mr. Mangala Muhandiram", role: "External Supervisor", summary: "Architecture & Vastu Consultant", photo: "assets/images/Mr.mangala.png" },
+  { name: "Prof. Samantha Rajapaksha", role: "Supervisor", summary: "Sri Lanka Institute of Information Technology", photo: "assets/images/Prof.Samantha.png", linkedin: "#", email: "mailto:example@example.com" },
+  { name: "Ms. Adya Dissanayake", role: "Co-Supervisor", summary: "Sri Lanka Institute of Information Technology", photo: "assets/images/Ms.Adya.png", linkedin: "#", email: "mailto:example@example.com" },
+  { name: "Mr. Mangala Muhandiram", role: "External Supervisor", summary: "Architecture & Vastu Consultant", photo: "assets/images/Mr.mangala.png", linkedin: "#", email: "mailto:example@example.com" },
 ];
 
 const contacts = [
@@ -178,9 +178,26 @@ function getFileBadge(item, kindLabel) {
 
 function renderProfileMedia(person) {
   if (person.photo) {
-    return `<img class="profile-photo" src="${escapeHtml(person.photo)}" alt="${escapeHtml(person.name)}" onerror="this.parentElement.innerHTML='Photo'">`;
+    const photo = escapeHtml(person.photo);
+    return `
+      <span class="profile-photo-bg" style="background-image: url('${photo}')"></span>
+      <img class="profile-photo" src="${photo}" alt="${escapeHtml(person.name)}" onerror="this.parentElement.innerHTML='Photo'">
+    `;
   }
   return "Photo";
+}
+
+function renderSocialLinks(person) {
+  return `
+    <div class="team-social-links" aria-label="${escapeHtml(person.name)} social links">
+      <a class="team-social-link" href="${escapeHtml(person.linkedin || "#")}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(person.name)} LinkedIn">
+        <span class="social-icon social-icon-linkedin">in</span>
+      </a>
+      <a class="team-social-link" href="${escapeHtml(person.email || "mailto:example@example.com")}" aria-label="Email ${escapeHtml(person.name)}">
+        <span class="social-icon social-icon-mail">@</span>
+      </a>
+    </div>
+  `;
 }
 
 /* ===================== RENDER FUNCTIONS ===================== */
@@ -274,6 +291,7 @@ function renderTeam() {
       <h3>${escapeHtml(member.name)}</h3>
       <p class="team-id">${escapeHtml(member.id)}</p>
       <p class="team-summary">${escapeHtml(member.summary)}</p>
+      ${renderSocialLinks(member)}
     </article>
   `).join("");
 }
@@ -288,6 +306,7 @@ function renderSupervisors() {
       <div class="team-role-tag">${escapeHtml(member.role)}</div>
       <h3>${escapeHtml(member.name)}</h3>
       <p class="team-summary">${escapeHtml(member.summary)}</p>
+      ${renderSocialLinks(member)}
     </article>
   `).join("");
 }
