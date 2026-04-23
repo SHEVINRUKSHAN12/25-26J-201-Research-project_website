@@ -280,14 +280,27 @@ ul {
 .hero {
   position: relative;
   min-height: 100vh;
-  padding: 128px 0 52px;
+  padding: 124px 0 54px;
   overflow: hidden;
+}
+
+.hero-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.62;
+  z-index: 0;
 }
 
 .hero-backdrop {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, #deecf9 0%, #f4f9fd 56%, #ffffff 100%);
+  background:
+    linear-gradient(90deg, rgba(222, 236, 249, 0.58) 0%, rgba(244, 249, 253, 0.5) 56%, rgba(255, 255, 255, 0.62) 100%),
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.48) 74%);
+  z-index: 0;
 }
 
 .hero::before,
@@ -322,14 +335,18 @@ ul {
 }
 
 .hero-copy {
-  max-width: 900px;
+  max-width: 1020px;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-badge {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 10px 20px;
   border-radius: 999px;
   border: 1.5px solid rgba(44, 130, 234, 0.72);
@@ -341,6 +358,7 @@ ul {
   text-transform: uppercase;
   margin-bottom: 24px;
   animation: fadeInUp 0.7s ease forwards;
+  text-align: center;
 }
 
 .hero-trust-row {
@@ -363,12 +381,15 @@ ul {
 }
 
 .hero h1 {
-  font-size: clamp(2.9rem, 5.4vw, 5rem);
+  font-size: 4.85rem;
   font-weight: 800;
-  letter-spacing: -0.05em;
-  line-height: 1.03;
+  letter-spacing: 0;
+  line-height: 1.08;
   margin-bottom: 18px;
   animation: fadeInUp 0.8s 0.14s ease both;
+  text-align: center;
+  width: 100%;
+  text-shadow: 0 2px 18px rgba(255, 255, 255, 0.82);
 }
 
 .hero h1 span {
@@ -376,11 +397,12 @@ ul {
 }
 
 .hero-lead {
-  max-width: 790px;
+  max-width: 760px;
   font-size: clamp(1rem, 1.45vw, 1.18rem);
   color: #5f6673;
-  margin: 0 auto 28px;
+  margin: 0 auto 30px;
   animation: fadeInUp 0.82s 0.2s ease both;
+  text-shadow: 0 1px 12px rgba(255, 255, 255, 0.78);
 }
 
 .hero-actions {
@@ -388,7 +410,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 44px;
+  margin-bottom: 46px;
   animation: fadeInUp 0.82s 0.28s ease both;
 }
 
@@ -554,8 +576,8 @@ ul {
 .hero-stats {
   display: flex;
   justify-content: center;
-  gap: 58px;
-  margin-top: 0;
+  gap: 68px;
+  margin-top: 18px;
 }
 
 .hero-stat-card {
@@ -583,6 +605,8 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   margin-top: 6px;
+  min-width: 150px;
+  text-align: center;
 }
 
 .scope-section {
@@ -1457,7 +1481,16 @@ ul {
   }
 
   .hero h1 {
-    font-size: clamp(2.45rem, 11vw, 4rem);
+    font-size: clamp(2.4rem, 10vw, 4rem);
+    line-height: 1.12;
+  }
+
+  .hero h1 br {
+    display: none;
+  }
+
+  .hero-stats {
+    gap: 30px;
   }
 
   .gap-grid,

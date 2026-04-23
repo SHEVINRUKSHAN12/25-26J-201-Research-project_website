@@ -377,7 +377,7 @@ function setFooterYear() {
   const el = document.getElementById("footer-year");
   if (!el) return;
 
-  el.textContent = `Copyright ${new Date().getFullYear()} HomeScope Research Project`;
+  el.textContent = `Copyright ${new Date().getFullYear()} HomeScope Research Project. All rights reserved.`;
 }
 
 /* ===================== INIT ===================== */
