@@ -97,25 +97,9 @@ ul { list-style: none; }
 .hero {
   position: relative; width: 100%; min-height: 100vh;
   display: flex; align-items: center; justify-content: center;
-  background: transparent;
+  background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
   overflow: hidden;
 }
-.hero-video-bg {
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  /* Adjust opacity to blend with the light theme */
-  opacity: 0.25;
-}
-.hero-video-overlay {
-  position: absolute; inset: 0; z-index: 0;
-  background:
-    radial-gradient(circle at top left, rgba(30, 136, 229, 0.22), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(0, 150, 136, 0.14), transparent 28%),
-    linear-gradient(135deg, rgba(227, 242, 253, 0.9) 0%, rgba(255, 255, 255, 0.85) 58%, rgba(238, 247, 247, 0.9) 100%);
-}
-
 .hero-content {
   position: relative; z-index: 3;
   text-align: center; max-width: 900px; padding: 0 24px;
@@ -348,13 +332,93 @@ ul { list-style: none; }
   background: var(--bg-alt); margin: 0 auto 20px;
   display: flex; align-items: center; justify-content: center;
   border: 2px dashed var(--line-color); color: var(--text-secondary); font-size: 0.8rem;
+  overflow: hidden;
 }
+.profile-photo { width: 100%; height: 100%; object-fit: cover; }
 .team-role-tag { color: var(--text-secondary); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 8px; }
 .team-card h3 { font-size: 1.1rem; margin-bottom: 4px; }
 .team-card p { color: var(--accent); font-size: 0.85rem; font-weight: 500; }
 
 .supervisors-grid { display: flex; justify-content: center; gap: 30px; margin-top: 40px; }
 .supervisors-grid .team-card { width: 300px; }
+
+/* ==================== CONTACT ==================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contact-info-card {
+  padding: 30px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-color);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+}
+.contact-info-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+.contact-info-card > p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+.contact-list {
+  margin-top: 24px;
+}
+.contact-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line-color);
+}
+.contact-item:last-child {
+  border-bottom: 0;
+}
+.contact-form {
+  display: grid;
+  gap: 16px;
+}
+.form-row {
+  display: grid;
+  gap: 8px;
+}
+.form-row label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--line-color);
+  background: #ffffff;
+  color: var(--text-primary);
+  font: inherit;
+  transition: var(--transition);
+}
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(30, 136, 229, 0.12);
+}
+.form-row textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+.contact-submit {
+  justify-self: start;
+}
+.contact-form-note {
+  min-height: 20px;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
 
 /* ==================== FOOTER ==================== */
 .site-footer {
@@ -396,6 +460,7 @@ ul { list-style: none; }
   .hero { min-height: auto; padding: 140px 0 90px; }
   .hero-stats { flex-direction: column; gap: 20px; }
   .section { padding: 60px 0; }
+  .contact-grid { grid-template-columns: 1fr; }
   .team-grid-section { grid-template-columns: 1fr; }
 }
 
