@@ -13,24 +13,22 @@
 
 <body>
 
-  <!-- ========== NAVBAR ========== -->
   <nav class="navbar" id="navbar">
     <a class="nav-brand" href="#home">
-      <!-- <img src="assets/images/homescope-icon.png" alt="HomeScope logo"> -->
       <div class="nav-brand-text">
         <span class="nav-brand-eyebrow">Research Project 25-26J-201</span>
         <span class="nav-brand-name">HomeScope</span>
       </div>
     </a>
-    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰ Menu</button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">Menu</button>
     <ul class="nav-links" id="nav-links">
       <li><a href="#home">Home</a></li>
       <li>
-        <a href="#domain">Project Scope <span class="arrow">▼</span></a>
+        <a href="#domain">Project Scope <span class="arrow">&#9662;</span></a>
         <div class="dropdown">
           <a href="#literature">Literature Survey</a>
           <a href="#research-gap">Research Gap</a>
-          <a href="#problem-solution">Problem & Solution</a>
+          <a href="#problem-solution">Problem &amp; Solution</a>
           <a href="#objectives">Research Objectives</a>
           <a href="#methodology">Methodology</a>
           <a href="#technologies">Technologies</a>
@@ -38,7 +36,7 @@
       </li>
       <li><a href="#milestones">Milestones</a></li>
       <li>
-        <a href="#downloads">Downloads <span class="arrow">▼</span></a>
+        <a href="#downloads">Downloads <span class="arrow">&#9662;</span></a>
         <div class="dropdown">
           <a href="#documents">Documents</a>
           <a href="#presentations">Presentations</a>
@@ -49,171 +47,178 @@
     </ul>
   </nav>
 
-  <!-- ========== HERO ========== -->
   <section id="home" class="hero">
-    <div class="hero-content">
-      <span class="hero-badge">AI Powered Intelligent Home Planning & Optimization System</span>
-      <h1><span>AI Powered</span> Intelligent Home Planning & Optimization System</h1>
-      <p class="hero-lead">An AI-powered platform designed to optimize residential home designs by improving both the
-        functionality and efficiency of space while integrating Vastu Vidya principles for cultural alignment.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#domain">Learn More</a>
-        <a class="btn btn-outline" href="#downloads">View Downloads</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <span class="hero-stat-num">4</span>
-          <span class="hero-stat-label">Sub-Objectives</span>
+    <div class="hero-backdrop"></div>
+    <div class="container hero-shell">
+      <div class="hero-copy">
+        <span class="hero-badge">AI Powered Intelligent Home Planning &amp; Optimization System</span>
+        <h1><span>AI Powered</span> Intelligent Home Planning &amp; Optimization System</h1>
+        <p class="hero-lead">An AI-powered system designed to optimize residential layouts, improve functional space
+          usage, and align planning decisions with Vastu Vidya principles for culturally grounded home design.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#domain">Learn More</a>
+          <a class="btn btn-outline" href="#downloads">View Downloads</a>
         </div>
-        <div class="hero-stat">
-          <span class="hero-stat-num">1</span>
-          <span class="hero-stat-label">Integrated Platform</span>
+        <div class="hero-stats">
+          <div class="hero-stat-card">
+            <span class="hero-stat-num">4</span>
+            <span class="hero-stat-label">Sub-Objectives</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="hero-stat-num">1</span>
+            <span class="hero-stat-label">Integrated Platform</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== DOMAIN / PROJECT SCOPE ========== -->
   <section id="domain" class="section">
     <div class="container">
       <div class="section-header reveal">
         <p class="section-tag">Project Scope</p>
-        <h2>Project Background & Research Scope</h2>
+        <h2>Project Background &amp; Research Scope</h2>
+        <p>This section explains the problem context, research gap, proposed solution, methodology, and enabling
+          technologies behind HomeScope.</p>
       </div>
 
-      <!-- Literature Survey -->
-      <div id="literature" class="scope-section reveal">
+      <div id="literature" class="scope-section scope-reading-card reveal">
         <div class="scope-section-header">
+          <span class="scope-section-kicker">01</span>
           <h3>Literature Survey</h3>
         </div>
         <p class="scope-text">Creating a home is one of the most significant investments for individuals and families,
           particularly in developing countries such as Sri Lanka. However, the process is highly complex and presents
           multiple challenges. The increasing demand for housing in urban areas has led to limited space, inefficient
           designs, and a lack of proper alignment with cultural practices. The current approach to home design is often
-          fragmented, requiring homeowners to manually coordinate with multiple professionals (architects, engineers,
-          contractors). This siloed process increases costs, causes delays, and significantly raises the risk of errors.
-        </p>
+          fragmented, requiring homeowners to manually coordinate with multiple professionals such as architects,
+          engineers, and contractors. This siloed process increases costs, causes delays, and significantly raises the
+          risk of errors.</p>
       </div>
 
-      <!-- Research Gap -->
       <div id="research-gap" class="scope-section reveal">
         <div class="scope-section-header">
+          <span class="scope-section-kicker">02</span>
           <h3>Research Gap</h3>
         </div>
         <div class="gap-grid">
           <div class="gap-card">
-            <span class="gap-card-icon">📏</span>
+            <span class="gap-card-icon">Space</span>
             <h4>Inefficient Space Utilization</h4>
-            <p>Traditional methods of space planning do not take full advantage of the available area, leading to wasted
-              space and inefficient layouts.</p>
+            <p>Traditional planning methods do not fully optimize available residential area, resulting in wasted
+              layouts and underused spaces.</p>
           </div>
           <div class="gap-card">
-            <span class="gap-card-icon">☯️</span>
+            <span class="gap-card-icon">Culture</span>
             <h4>Cultural Disconnection</h4>
-            <p>Modern, generic designs often overlook Vastu Shastra principles, creating a disconnect between the
-              functional and spiritual aspects of the home.</p>
+            <p>Modern generic design practices often overlook Vastu principles, weakening the relationship between
+              functionality and cultural alignment.</p>
           </div>
           <div class="gap-card">
-            <span class="gap-card-icon">🧩</span>
+            <span class="gap-card-icon">Workflow</span>
             <h4>Fragmented Workflows</h4>
-            <p>Without a centralized platform, it is difficult for homeowners to visualize their project holistically,
-              from initial concept to final construction plan.</p>
+            <p>Without a unified platform, homeowners struggle to visualize and evaluate planning choices from concept
+              through implementation.</p>
           </div>
         </div>
       </div>
 
-      <!-- Problem & Solution -->
       <div id="problem-solution" class="scope-section reveal">
         <div class="scope-section-header">
-          <h3>Research Problem & Solution</h3>
+          <span class="scope-section-kicker">03</span>
+          <h3>Research Problem &amp; Solution</h3>
         </div>
         <div class="problem-solution">
           <div class="ps-card problem">
-            <h4>⚠ Proposed Problem</h4>
-            <p>How can we integrate modern design techniques with traditional cultural values while ensuring that
-              residential design is efficient, functional, and sustainable, all without the high costs and disjointed
-              workflows of the traditional architectural process?</p>
+            <span class="ps-label">Problem</span>
+            <h4>How can home planning become efficient, explainable, and culturally aligned?</h4>
+            <p>Current residential design workflows often remain expensive, disconnected, and difficult to optimize
+              across land use, interior layout, exterior functionality, and cultural requirements.</p>
           </div>
           <div class="ps-card solution">
-            <h4>✓ Proposed Solution</h4>
-            <p>The solution is an AI-powered platform designed to optimize residential home designs. The system takes
-              user inputs, analyzes the layout, and generates space optimization suggestions. It seamlessly aligns
-              designs with Vastu Vidya (adjusting room orientation and furniture), optimizes land use for smaller plots,
-              and maximizes the functionality of exterior spaces like gardens and rooftops. Real-time feedback and
-              compliance scores help users make informed decisions.</p>
+            <span class="ps-label">Solution</span>
+            <h4>HomeScope unifies planning intelligence inside a single AI-assisted workflow.</h4>
+            <p>The platform analyzes user inputs, optimizes layouts, evaluates Vastu compliance, and improves both
+              interior and exterior space utilization while helping users make better design decisions in real time.</p>
           </div>
         </div>
       </div>
 
-      <!-- Research Objectives -->
       <div id="objectives" class="scope-section reveal">
         <div class="scope-section-header">
+          <span class="scope-section-kicker">04</span>
           <h3>Research Objectives</h3>
         </div>
         <div id="objectives-list" class="objectives-grid"></div>
       </div>
 
-      <!-- Methodology -->
       <div id="methodology" class="scope-section reveal">
         <div class="scope-section-header">
-          <h3>Methodology & Architecture</h3>
+          <span class="scope-section-kicker">05</span>
+          <h3>Methodology &amp; Architecture</h3>
         </div>
         <div class="methodology-layout">
-          <div class="methodology-text">
-            <p class="scope-text">The system uses a modular yet integrated architecture combining land analysis, spatial
-              optimization, cultural compliance, and visualization. It includes four modules: land utilization with 2D
-              plan generation, AI-based Vastu detection, interior space optimization, and exterior space optimization.
-              Modules communicate via centralized JSON data flows, sharing user inputs to ensure consistent planning.
-            </p>
-            <p class="scope-text">YOLOv8 and CNN models are utilized for semantic segmentation and room detection, while
-              Rule-based and Constraint-based methods optimize furniture placement and outdoor layout. A Genetic
-              Algorithm (GA) evolves interior layouts by penalizing constraint violations and rewarding efficient space
-              utilization.</p>
+          <div class="methodology-text-card">
+            <p class="scope-text">The system uses a modular but integrated architecture combining land analysis,
+              spatial optimization, cultural compliance, and visualization. It includes four modules: land utilization
+              with 2D plan generation, AI-based Vastu detection, interior space optimization, and exterior space
+              optimization.</p>
+            <p class="scope-text">Modules communicate through centralized JSON data flows to maintain planning
+              consistency. YOLOv8 and CNN models are used for semantic segmentation and room detection, while rule-based,
+              constraint-based, and genetic algorithm approaches improve space usage, furniture placement, and outdoor
+              layout quality.</p>
           </div>
-          <div class="architecture-img">
-            <!-- <img src="assets/images/architecture-diagram.png" alt="System architecture diagram"> -->
-            <div style="background:#f1f3f5; padding: 40px; text-align: center; border-radius: 12px; color: #888;">
-              [Architecture Diagram Placeholder]</div>
-          </div>
+          <figure class="architecture-card">
+            <img src="assets/images/architecture-diagram.png" alt="System architecture diagram">
+            <figcaption>Integrated research architecture linking planning, compliance, and optimization workflows.
+            </figcaption>
+          </figure>
         </div>
       </div>
 
-      <!-- Technologies -->
       <div id="technologies" class="scope-section reveal">
-        <div class="scope-section-header" style="text-align:center;">
-          <h3>Technologies Used</h3>
+        <div class="section-header section-header-tight">
+          <p class="section-tag">Technology Stack</p>
+          <h2>Technologies Used</h2>
         </div>
         <div id="tech-list" class="tech-grid"></div>
       </div>
     </div>
   </section>
 
-  <!-- ========== MILESTONES ========== -->
   <section id="milestones" class="section section-alt">
     <div class="container">
       <div class="section-header reveal">
         <p class="section-tag">Milestones</p>
         <h2>Timeline in Brief</h2>
+        <p>A research timeline that highlights the assessment structure, project progression, and expected academic
+          outputs.</p>
       </div>
       <div id="milestones-list" class="timeline"></div>
     </div>
   </section>
 
-  <!-- ========== DOWNLOADS ========== -->
   <section id="downloads" class="section">
     <div class="container">
       <div class="section-header reveal">
         <p class="section-tag">Downloads</p>
-        <h2>Documents & Presentations</h2>
+        <h2>Documents &amp; Presentations</h2>
+        <p>Access submitted research materials and view which deliverables are still pending for release.</p>
       </div>
       <div class="downloads-grid reveal">
         <div class="download-col" id="documents">
-          <h3>📄 Documents</h3>
+          <div class="download-col-head">
+            <span class="download-col-kicker">Research Docs</span>
+            <h3>Documents</h3>
+          </div>
           <p>Please find all documents related to this project below.</p>
           <div id="documents-list" class="download-list"></div>
         </div>
         <div class="download-col" id="presentations">
-          <h3>📊 Presentations</h3>
+          <div class="download-col-head">
+            <span class="download-col-kicker">Presentation Decks</span>
+            <h3>Presentations</h3>
+          </div>
           <p>Please find all presentations related to this project below.</p>
           <div id="presentations-list" class="download-list"></div>
         </div>
@@ -221,39 +226,44 @@
     </div>
   </section>
 
-  <!-- ========== TEAM ========== -->
   <section id="team" class="section section-alt">
     <div class="container">
       <div class="section-header reveal">
         <p class="section-tag">About Us</p>
         <h2>Meet Our Team</h2>
+        <p>The project team and supervisors behind the HomeScope research effort.</p>
       </div>
       <div id="team-list" class="team-grid-section reveal"></div>
 
-      <div class="section-header reveal" style="margin-top: 60px; margin-bottom: 30px;">
+      <div class="section-header section-header-sub reveal">
+        <p class="section-tag">Academic Guidance</p>
         <h2>Supervisors</h2>
       </div>
       <div id="supervisors-list" class="supervisors-grid reveal"></div>
     </div>
   </section>
 
-  <!-- ========== CONTACT ========== -->
   <section id="contact" class="section">
     <div class="container">
       <div class="section-header reveal">
         <p class="section-tag">Contact Us</p>
         <h2>Get in Touch</h2>
+        <p>Reach the HomeScope research team for project inquiries, collaboration interest, or review discussions.</p>
       </div>
       <div class="contact-grid reveal">
-        <div class="contact-info-card">
+        <div class="contact-info-card contact-details-card">
           <h3>Contact Details</h3>
-          <p>For further queries please reach us via the contact details provided below. Hope this project helped you in
-            some manner. Thank you!</p>
+          <p>Use the details below to reach the research team directly. The form on this page will open your email app
+            with your message prepared.</p>
           <div id="contact-list" class="contact-list"></div>
+          <div class="contact-card-foot">
+            <span class="contact-foot-label">Availability</span>
+            <strong>Academic project communication and research queries</strong>
+          </div>
         </div>
-        <div class="contact-info-card">
+        <div class="contact-info-card contact-form-card">
           <h3>Send a Message</h3>
-          <p>Fill out the form below. It will open your email app with the message addressed to our team.</p>
+          <p>Fill out the form below to prepare an email to the team.</p>
           <form id="contact-form" class="contact-form">
             <div class="form-row">
               <label for="contact-name">Full Name</label>
@@ -265,11 +275,12 @@
             </div>
             <div class="form-row">
               <label for="contact-subject">Subject</label>
-              <input id="contact-subject" name="subject" type="text" placeholder="Subject" required>
+              <input id="contact-subject" name="subject" type="text" placeholder="Message subject" required>
             </div>
             <div class="form-row">
               <label for="contact-message">Message</label>
-              <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here"
+                required></textarea>
             </div>
             <button class="btn btn-primary contact-submit" type="submit">Send Message</button>
             <p id="contact-form-note" class="contact-form-note"></p>
@@ -279,11 +290,9 @@
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
   <footer class="site-footer">
-    <div class="container">
-      <p style="color:var(--accent);font-family:'Poppins',sans-serif;font-weight:600;font-size:1.1rem;">HomeScope
-        Research Team</p>
+    <div class="container footer-inner">
+      <p class="footer-brand">HomeScope Research Team</p>
       <p id="footer-year"></p>
     </div>
   </footer>

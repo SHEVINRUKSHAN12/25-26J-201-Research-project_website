@@ -2,19 +2,19 @@
 const objectives = [
   {
     title: "Interior Space Optimization",
-    text: "Develop an AI-powered platform that optimizes interior space in residential homes, generating optimized furniture placements and layouts for all rooms. It integrates Vastu Vidya principles, providing real-time adjustments.",
+    text: "Develop an AI-powered platform that optimizes interior space in residential homes, generating improved furniture placements and layouts for all rooms while integrating Vastu Vidya principles.",
   },
   {
     title: "Vastu Vidya & Design Correction",
-    text: "Develop an AI-powered system that ensures residential floor plans are in harmony with Vastu Vidya principles. It automatically analyzes designs, making real-time adjustments to room orientation and layout, and providing a compliance score.",
+    text: "Develop an AI-powered system that evaluates residential floor plans against Vastu Vidya principles and provides real-time guidance for room orientation and layout correction.",
   },
   {
     title: "Land Optimization & Plan Generation",
-    text: "Develop an AI-based system for land optimization and plan generation that ensures efficient use of available land while maintaining cultural alignment with Vastu Vidya principles.",
+    text: "Develop an AI-based system for land optimization and plan generation that ensures efficient land usage while maintaining cultural alignment and planning feasibility.",
   },
   {
     title: "Exterior Space Optimization",
-    text: "Design an AI-powered platform focused on optimizing the use of exterior spaces such as gardens, rooftops, and facades for functional purposes like gardening, relaxation, and energy efficiency.",
+    text: "Design an AI-powered platform focused on improving the use of exterior spaces such as gardens, rooftops, and facades for functional, sustainable, and lifestyle-oriented outcomes.",
   },
 ];
 
@@ -85,18 +85,18 @@ const technologies = [
         <circle cx="26" cy="88" r="6" fill="#1d4ed8"/>
       </svg>
     `),
-  }
+  },
 ];
 
 const milestones = [
-  { date: "Date TBD", title: "Proposal Presentation & Report", description: "Initial proposal presentation and report submission covering the project idea, scope, and planned approach.", marks: "Marks Allocated: 12%" },
-  { date: "May 1, 2025", title: "Progress Presentation I", description: "First progress review covering the initial implementation stage and overall project development status.", marks: "Marks Allocated: 15%" },
-  { date: "March 9, 2026", title: "Progress Presentation II", description: "Second progress review focused on advanced implementation progress, refinements, and readiness for completion.", marks: "Marks Allocated: 18%" },
-  { date: "Date TBD", title: "Final Presentation and VIVA", description: "Final presentation and viva assessment demonstrating the completed solution and evaluating each member's understanding.", marks: "Marks Allocated: 20%" },
-  { date: "Date TBD", title: "Final Report", description: "Comprehensive final project report documenting the full research, implementation, evaluation, and outcomes.", marks: "Marks Allocated: 19%" },
-  { date: "Date TBD", title: "Research Paper (published)", description: "Published research paper presenting the project's contribution, findings, and academic value.", marks: "Marks Allocated: 10%" },
-  { date: "Date TBD", title: "Website", description: "Project website submission showcasing the research, implementation details, milestones, and downloadable resources.", marks: "Marks Allocated: 2%" },
-  { date: "Date TBD", title: "Research Logbook, Status Document 1 & 2", description: "Continuous assessment based on research logbook maintenance and the submission of status documents 1 and 2.", marks: "Marks Allocated: 4%" },
+  { date: "Date TBD", title: "Proposal Presentation & Report", description: "Initial proposal presentation and report submission covering the project idea, scope, and planned approach.", marks: "12%", status: "completed" },
+  { date: "May 1, 2025", title: "Progress Presentation I", description: "First progress review covering the initial implementation stage and overall project development status.", marks: "15%" },
+  { date: "March 9, 2026", title: "Progress Presentation II", description: "Second progress review focused on advanced implementation progress, refinements, and readiness for completion.", marks: "18%" },
+  { date: "Date TBD", title: "Final Presentation and VIVA", description: "Final presentation and viva assessment demonstrating the completed solution and evaluating each member's understanding.", marks: "20%" },
+  { date: "Date TBD", title: "Final Report", description: "Comprehensive final project report documenting the full research, implementation, evaluation, and outcomes.", marks: "19%" },
+  { date: "Date TBD", title: "Research Paper (published)", description: "Published research paper presenting the project's contribution, findings, and academic value.", marks: "10%" },
+  { date: "Date TBD", title: "Website", description: "Project website submission showcasing the research, implementation details, milestones, and downloadable resources.", marks: "2%" },
+  { date: "Date TBD", title: "Research Logbook, Status Document 1 & 2", description: "Continuous assessment based on research logbook maintenance and the submission of status documents 1 and 2.", marks: "4%" },
 ];
 
 const documents = [
@@ -123,7 +123,7 @@ const team = [
 const supervisors = [
   { name: "Prof. Samantha Rajapaksha", role: "Supervisor", summary: "Sri Lanka Institute of Information Technology", photo: "assets/images/Prof.Samantha.png" },
   { name: "Ms. Adya Dissanayake", role: "Co-Supervisor", summary: "Sri Lanka Institute of Information Technology", photo: "assets/images/Ms.Adya.png" },
-  { name: "Mr. Mangala Muhandiram", role: "External Supervisor", summary: "Architecture & Vastu Consultant", photo: "assets/images/Mr.mangala.png" }
+  { name: "Mr. Mangala Muhandiram", role: "External Supervisor", summary: "Architecture & Vastu Consultant", photo: "assets/images/Mr.mangala.png" },
 ];
 
 const contacts = [
@@ -131,189 +131,261 @@ const contacts = [
   { label: "University", value: "Sri Lanka Institute of Information Technology" },
 ];
 
-/* ===================== RENDER FUNCTIONS ===================== */
-function renderObjectives() {
-  const el = document.getElementById('objectives-list');
-  if (!el) return;
-  el.innerHTML = objectives.map((item, i) => `
-    <div class="obj-card reveal reveal-delay-${(i % 4) + 1}">
-      <h4>${item.title}</h4>
-      <p>${item.text}</p>
-    </div>
-  `).join('');
+/* ===================== HELPERS ===================== */
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }
 
-function renderTechnologies() {
-  const el = document.getElementById('tech-list');
-  if (!el) return;
-  el.innerHTML = technologies.map(t => `
-    <div class="tech-item">
-      <div class="tech-icon-circle">
-        <img src="${t.icon}" alt="${t.name}">
-      </div>
-      <p class="tech-name">${t.name}</p>
-    </div>
-  `).join('');
+function getMilestoneStatus(milestone) {
+  if (milestone.status === "completed") {
+    return { className: "completed", label: "Completed" };
+  }
+
+  const dateLabel = milestone.date;
+  if (!dateLabel || dateLabel.toLowerCase().includes("tbd")) {
+    return { className: "planned", label: "Planned" };
+  }
+
+  const parsedDate = new Date(dateLabel);
+  if (Number.isNaN(parsedDate.getTime())) {
+    return { className: "planned", label: "Planned" };
+  }
+
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const milestoneDate = new Date(parsedDate.getFullYear(), parsedDate.getMonth(), parsedDate.getDate());
+
+  if (milestoneDate.getTime() <= today.getTime()) {
+    return { className: "completed", label: "Completed" };
+  }
+
+  return { className: "upcoming", label: "Upcoming" };
 }
 
-function renderMilestones() {
-  const el = document.getElementById('milestones-list');
-  if (!el) return;
-  el.innerHTML = milestones.map((m, i) => `
-    <div class="timeline-item reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <div class="timeline-date">${m.date}</div>
-        <h3>${m.title}</h3>
-        <p>${m.description}</p>
-        <span class="timeline-badge">${m.marks}</span>
-      </div>
-    </div>
-  `).join('');
-}
+function getFileBadge(item, kindLabel) {
+  if (!item.href) {
+    return kindLabel === "Document" ? "DOC" : "PPT";
+  }
 
-function renderDownloads(targetId, items) {
-  const el = document.getElementById(targetId);
-  if (!el) return;
-  el.innerHTML = items.map(item => {
-    const ready = Boolean(item.href);
-    const btn = ready
-      ? `<a class="download-btn ready" href="${item.href}" target="_blank" rel="noreferrer">⬇ Download</a>`
-      : `<span class="download-btn pending">${item.status}</span>`;
-    return `
-      <div class="download-card">
-        <div class="download-card-info">
-          <h4>${item.title}</h4>
-          <p>${item.subtitle}</p>
-        </div>
-        ${btn}
-      </div>
-    `;
-  }).join('');
+  const extension = item.href.split(".").pop();
+  return extension ? extension.toUpperCase() : kindLabel.slice(0, 3).toUpperCase();
 }
 
 function renderProfileMedia(person) {
   if (person.photo) {
-    return `<img class="profile-photo" src="${person.photo}" alt="${person.name}" onerror="this.parentElement.innerHTML='<span>Photo</span>'">`;
+    return `<img class="profile-photo" src="${escapeHtml(person.photo)}" alt="${escapeHtml(person.name)}" onerror="this.parentElement.innerHTML='Photo'">`;
   }
-  return `<span>Photo</span>`;
+  return "Photo";
+}
+
+/* ===================== RENDER FUNCTIONS ===================== */
+function renderObjectives() {
+  const el = document.getElementById("objectives-list");
+  if (!el) return;
+
+  el.innerHTML = objectives.map((item, index) => `
+    <article class="obj-card reveal reveal-delay-${(index % 4) + 1}">
+      <h4>${escapeHtml(item.title)}</h4>
+      <p>${escapeHtml(item.text)}</p>
+    </article>
+  `).join("");
+}
+
+function renderTechnologies() {
+  const el = document.getElementById("tech-list");
+  if (!el) return;
+
+  el.innerHTML = technologies.map((item) => `
+    <div class="tech-item">
+      <div class="tech-icon-circle">
+        <img src="${escapeHtml(item.icon)}" alt="${escapeHtml(item.name)}">
+      </div>
+      <p class="tech-name">${escapeHtml(item.name)}</p>
+    </div>
+  `).join("");
+}
+
+function renderMilestones() {
+  const el = document.getElementById("milestones-list");
+  if (!el) return;
+
+  el.innerHTML = milestones.map((item) => {
+    const status = getMilestoneStatus(item);
+    return `
+      <article class="timeline-item timeline-${status.className} reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-meta">
+            <span class="timeline-date">${escapeHtml(item.date)}</span>
+            <span class="timeline-status status-${status.className}">${escapeHtml(status.label)}</span>
+          </div>
+          <h3>${escapeHtml(item.title)}</h3>
+          <p>${escapeHtml(item.description)}</p>
+          <span class="timeline-badge">Marks Allocated: ${escapeHtml(item.marks)}</span>
+        </div>
+      </article>
+    `;
+  }).join("");
+}
+
+function renderDownloads(targetId, items, kindLabel) {
+  const el = document.getElementById(targetId);
+  if (!el) return;
+
+  el.innerHTML = items.map((item) => {
+    const ready = Boolean(item.href);
+    const fileBadge = getFileBadge(item, kindLabel);
+    const button = ready
+      ? `<a class="download-btn ready" href="${escapeHtml(item.href)}" target="_blank" rel="noreferrer">Open File</a>`
+      : `<span class="download-btn pending" aria-disabled="true">${escapeHtml(item.status)}</span>`;
+
+    return `
+      <article class="download-card">
+        <div class="download-card-main">
+          <span class="download-file-badge">${escapeHtml(fileBadge)}</span>
+          <div class="download-card-info">
+            <h4>${escapeHtml(item.title)}</h4>
+            <p>${escapeHtml(item.subtitle)}</p>
+            <div class="download-card-meta">
+              <span class="download-chip">${escapeHtml(kindLabel)}</span>
+              <span class="download-status status-${ready ? "ready" : "pending"}">${escapeHtml(ready ? "Available" : "Pending")}</span>
+            </div>
+          </div>
+        </div>
+        ${button}
+      </article>
+    `;
+  }).join("");
 }
 
 function renderTeam() {
-  const el = document.getElementById('team-list');
+  const el = document.getElementById("team-list");
   if (!el) return;
-  el.innerHTML = team.map((m, i) => `
-    <div class="team-card reveal reveal-delay-${(i % 4) + 1}">
-      <div class="team-img-placeholder">${renderProfileMedia(m)}</div>
-      <div class="team-role-tag">${m.role}</div>
-      <h3>${m.name}</h3>
-      <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 12px;">${m.id}</p>
-      <p style="color: var(--text-primary);">${m.summary}</p>
-    </div>
-  `).join('');
+
+  el.innerHTML = team.map((member, index) => `
+    <article class="team-card reveal reveal-delay-${(index % 4) + 1}">
+      <div class="team-img-placeholder">${renderProfileMedia(member)}</div>
+      <div class="team-role-tag">${escapeHtml(member.role)}</div>
+      <h3>${escapeHtml(member.name)}</h3>
+      <p class="team-id">${escapeHtml(member.id)}</p>
+      <p class="team-summary">${escapeHtml(member.summary)}</p>
+    </article>
+  `).join("");
 }
 
 function renderSupervisors() {
-  const el = document.getElementById('supervisors-list');
+  const el = document.getElementById("supervisors-list");
   if (!el) return;
-  el.innerHTML = supervisors.map((m, i) => `
-    <div class="team-card reveal reveal-delay-${(i % 2) + 1}">
-      <div class="team-img-placeholder">${renderProfileMedia(m)}</div>
-      <div class="team-role-tag">${m.role}</div>
-      <h3>${m.name}</h3>
-      <p style="color: var(--text-secondary); margin-top: 10px;">${m.summary}</p>
-    </div>
-  `).join('');
+
+  el.innerHTML = supervisors.map((member, index) => `
+    <article class="team-card reveal reveal-delay-${(index % 3) + 1}">
+      <div class="team-img-placeholder">${renderProfileMedia(member)}</div>
+      <div class="team-role-tag">${escapeHtml(member.role)}</div>
+      <h3>${escapeHtml(member.name)}</h3>
+      <p class="team-summary">${escapeHtml(member.summary)}</p>
+    </article>
+  `).join("");
 }
 
 function renderContacts() {
-  const el = document.getElementById('contact-list');
+  const el = document.getElementById("contact-list");
   if (!el) return;
-  el.innerHTML = contacts.map(c => `
+
+  el.innerHTML = contacts.map((item) => `
     <div class="contact-item">
-      <h4 style="color: var(--accent); margin-bottom: 4px; font-size: 0.9rem;">${c.label}</h4>
-      <p style="color: var(--text-secondary); font-size: 0.95rem;">${c.value}</p>
+      <h4>${escapeHtml(item.label)}</h4>
+      <p class="contact-value">${escapeHtml(item.value)}</p>
     </div>
-  `).join('');
+  `).join("");
 }
 
+/* ===================== INTERACTION ===================== */
 function setupContactForm() {
-  const form = document.getElementById('contact-form');
-  const note = document.getElementById('contact-form-note');
+  const form = document.getElementById("contact-form");
+  const note = document.getElementById("contact-form-note");
   if (!form || !note) return;
 
-  form.addEventListener('submit', (event) => {
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const formData = new FormData(form);
-    const name = String(formData.get('name') || '').trim();
-    const email = String(formData.get('email') || '').trim();
-    const subject = String(formData.get('subject') || '').trim();
-    const message = String(formData.get('message') || '').trim();
-    const recipient = contacts.find((item) => item.label.toLowerCase().includes('email'))?.value || 'team.homescope@gmail.com';
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const subject = String(formData.get("subject") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+    const recipient = contacts.find((item) => item.label.toLowerCase().includes("email"))?.value || "team.homescope@gmail.com";
 
     const body = [
       `Name: ${name}`,
       `Email: ${email}`,
-      '',
+      "",
       message,
-    ].join('\n');
+    ].join("\n");
 
     const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoUrl;
-    note.textContent = 'Your email app should open with this message addressed to the research team.';
+    note.textContent = "Your email app should open with this message addressed to the research team.";
     form.reset();
   });
 }
 
-/* ===================== NAVBAR SCROLL EFFECT ===================== */
 function setupNavbar() {
-  const navbar = document.getElementById('navbar');
-  const toggle = document.getElementById('menu-toggle');
-  const links = document.getElementById('nav-links');
+  const navbar = document.getElementById("navbar");
+  const toggle = document.getElementById("menu-toggle");
+  const links = document.getElementById("nav-links");
 
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  if (!navbar || !toggle || !links) return;
+
+  const syncNavbarState = () => {
+    navbar.classList.toggle("scrolled", window.scrollY > 24);
+  };
+
+  syncNavbarState();
+  window.addEventListener("scroll", syncNavbarState);
+
+  toggle.addEventListener("click", () => {
+    links.classList.toggle("open");
+    toggle.textContent = links.classList.contains("open") ? "Close" : "Menu";
   });
 
-  toggle.addEventListener('click', () => {
-    links.classList.toggle('open');
-    toggle.textContent = links.classList.contains('open') ? '✕ Close' : '☰ Menu';
-  });
-
-  links.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      links.classList.remove('open');
-      toggle.textContent = '☰ Menu';
+  links.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      links.classList.remove("open");
+      toggle.textContent = "Menu";
     });
   });
 }
 
-/* ===================== SCROLL REVEAL ===================== */
 function setupScrollReveal() {
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        entry.target.classList.add("visible");
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
 
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 }
 
-/* ===================== FOOTER YEAR ===================== */
 function setFooterYear() {
-  const el = document.getElementById('footer-year');
-  if (el) el.textContent = `© ${new Date().getFullYear()} HomeScope Research Project`;
+  const el = document.getElementById("footer-year");
+  if (!el) return;
+
+  el.textContent = `Copyright ${new Date().getFullYear()} HomeScope Research Project`;
 }
 
 /* ===================== INIT ===================== */
 renderObjectives();
 renderTechnologies();
 renderMilestones();
-renderDownloads('documents-list', documents);
-renderDownloads('presentations-list', presentations);
+renderDownloads("documents-list", documents, "Document");
+renderDownloads("presentations-list", presentations, "Presentation");
 renderTeam();
 renderSupervisors();
 renderContacts();
@@ -321,7 +393,6 @@ setupNavbar();
 setupContactForm();
 setFooterYear();
 
-// Delay reveal setup to allow dynamic content to render
 requestAnimationFrame(() => {
   requestAnimationFrame(setupScrollReveal);
 });
