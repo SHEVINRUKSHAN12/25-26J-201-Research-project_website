@@ -175,7 +175,8 @@ function getFileBadge(item, kindLabel) {
     return kindLabel === "Document" ? "DOC" : "PPT";
   }
 
-  const extension = item.href.split(".").pop();
+  const cleanHref = item.href.split(/[?#]/)[0];
+  const extension = cleanHref.split(".").pop();
   return extension ? extension.toUpperCase() : kindLabel.slice(0, 3).toUpperCase();
 }
 
