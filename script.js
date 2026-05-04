@@ -101,7 +101,7 @@ const milestones = [
 
 const documents = [
   { title: "Topic Assessment", subtitle: "Submitted", href: "assets/docs/Topic_Assesment.pdf", status: "Ready" },
-  { title: "Research Paper", subtitle: "Submitted", href: "assets/docs/Research Paper.pdf", status: "Ready" },
+  { title: "Research Paper", subtitle: "Submitted", href: "assets/docs/Research Paper.pdf?v=20260504-5", status: "Ready" },
   { title: "Individual Report - IT22914996", subtitle: "Submitted", href: "assets/docs/IT22914996_Individual_report_25-26J-201.pdf", status: "Ready" },
   { title: "Individual Report - IT22908124", subtitle: "Submitted", href: "assets/docs/IT22908124_Individual_Report_25-26J-201.pdf", status: "Ready" },
   { title: "Individual Report - IT22346018", subtitle: "Submitted", href: "assets/docs/IT22346018_Individual_Report_25-26j-201.pdf", status: "Ready" },
