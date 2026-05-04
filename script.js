@@ -102,15 +102,18 @@ const milestones = [
 const documents = [
   { title: "Topic Assessment", subtitle: "Submitted", href: "assets/docs/Topic_Assesment.pdf", status: "Ready" },
   { title: "Research Paper", subtitle: "Submitted", href: "assets/docs/Research Paper.pdf", status: "Ready" },
-  { title: "Project Charter", subtitle: "Yet to be submitted", href: "", status: "Pending" },
-  { title: "Final Report", subtitle: "Yet to be submitted", href: "", status: "Pending" },
+  { title: "Individual Report - IT22914996", subtitle: "Submitted", href: "assets/docs/IT22914996_Individual_report_25-26J-201.pdf", status: "Ready" },
+  { title: "Individual Report - IT22908124", subtitle: "Submitted", href: "assets/docs/IT22908124_Individual_Report_25-26J-201.pdf", status: "Ready" },
+  { title: "Individual Report - IT22346018", subtitle: "Submitted", href: "assets/docs/IT22346018_Individual_Report_25-26j-201.pdf", status: "Ready" },
+  { title: "Individual Report - IT22924278", subtitle: "Submitted", href: "assets/docs/IT22924278_Individual_Report_25-26J-201.pdf", status: "Ready" },
+  { title: "Final Report", subtitle: "Submitted", href: "", status: "Ready" },
 ];
 
 const presentations = [
   { title: "Proposal Presentation", subtitle: "Submitted", href: "assets/presentations/Progress_presentaion.pptx", status: "Ready" },
-  { title: "Progress Presentation I", subtitle: "Yet to be submitted", href: "", status: "Pending" },
+  { title: "Progress Presentation I", subtitle: "Submitted", href: "", status: "Ready" },
   { title: "Progress Presentation II", subtitle: "Submitted", href: "assets/presentations/PP2_presentaion.pptx", status: "Ready" },
-  { title: "Final Presentation", subtitle: "Yet to be submitted", href: "", status: "Pending" },
+  { title: "Final Presentation", subtitle: "Submitted", href: "", status: "Ready" },
 ];
 
 const team = [
@@ -255,11 +258,12 @@ function renderDownloads(targetId, items, kindLabel) {
   if (!el) return;
 
   el.innerHTML = items.map((item) => {
-    const ready = Boolean(item.href);
+    const ready = item.status === "Ready";
+    const hasFile = Boolean(item.href);
     const fileBadge = getFileBadge(item, kindLabel);
-    const button = ready
+    const button = hasFile
       ? `<a class="download-btn ready" href="${escapeHtml(item.href)}" target="_blank" rel="noreferrer">Open File</a>`
-      : `<span class="download-btn pending" aria-disabled="true">${escapeHtml(item.status)}</span>`;
+      : `<span class="download-btn ${ready ? "ready" : "pending"}" aria-disabled="true">${escapeHtml(ready ? "Available" : item.status)}</span>`;
 
     return `
       <article class="download-card">
